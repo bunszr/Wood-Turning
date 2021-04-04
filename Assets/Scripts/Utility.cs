@@ -29,11 +29,8 @@ public static class Utility
         float interpolatedPercentA = Mathf.InverseLerp(planeWood.BottomVertex(0).x, planeWood.BottomVertex(planeWood.SegmentCountX - 1).x, leftPoint.x);
         float interpolatedPercentB = Mathf.InverseLerp(planeWood.BottomVertex(0).x, planeWood.BottomVertex(planeWood.SegmentCountX - 1).x, rigthPoint.x);
         
-        int interpolatedIndexA = Mathf.FloorToInt(interpolatedPercentA * (planeWood.SegmentCountX - 1));
-        int interpolatedIndexB = Mathf.CeilToInt(interpolatedPercentB * (planeWood.SegmentCountX - 1));
-
-        interpolationTwoIndies[0] = Mathf.Clamp(interpolatedIndexA, 0, planeWood.SegmentCountX - 1);
-        interpolationTwoIndies[1] = Mathf.Clamp(interpolatedIndexB, 0, planeWood.SegmentCountX - 1);
+        interpolationTwoIndies[0] = Mathf.FloorToInt(interpolatedPercentA * (planeWood.SegmentCountX - 1));
+        interpolationTwoIndies[1] = Mathf.CeilToInt(interpolatedPercentB * (planeWood.SegmentCountX - 1));
         return interpolationTwoIndies;
     }
 
