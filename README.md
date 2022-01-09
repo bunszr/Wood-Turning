@@ -4,6 +4,8 @@ Not : "changeable Texture Percent" dizisindeki son eleman işe yaramıyor aslın
 
 We will talk about how to make the wood turning game that was famous once.
 
+-----------------------------------------------------------------------------------
+
 Note : The last element in the "changeable Texture Percent" array is actually useless. I did not change it because I noticed it late.
 
 Ağaç tornalama işlemi nasıl yapılır | How to make wood turning link = https://www.youtube.com/watch?v=FjQz7YfCy4M
